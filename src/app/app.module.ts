@@ -24,8 +24,6 @@ import { HomeRecommendComponent } from './home/home-recommend/home-recommend.com
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { AboutComponent } from './about/about.component';
 import { FoodComponent } from './pension-service/food/food.component';
-import { FoodReservationComponent } from './food-reservation/food-reservation.component';
-import { GoogleSheetService } from './google-sheet.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FlatBenchComponent } from './pension-service/flat-bench/flat-bench.component';
 import { FacilitiesComponent } from './about/facilities/facilities.component';
@@ -53,7 +51,6 @@ import { RoomComponent } from './pension-service/room/room.component';
     HomeYoutubeComponent,
     AboutComponent,
     FoodComponent,
-    FoodReservationComponent,
     FlatBenchComponent,
     FacilitiesComponent,
     BBQComponent,
@@ -89,7 +86,7 @@ import { RoomComponent } from './pension-service/room/room.component';
     HttpClientModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [GoogleSheetService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
