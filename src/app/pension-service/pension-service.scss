@@ -15,9 +15,9 @@
     position: absolute;
 
     p {
-      @include font-main-title;
       font-size: 1.5rem;
       line-height: 1.5rem;
+      font-weight: 900;
       color: white;
       margin: 1rem;
     }
