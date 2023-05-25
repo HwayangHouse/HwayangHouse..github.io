@@ -33,7 +33,7 @@ jobs:
         run: npm install -g @angular/cli
 
       - name: Build Angular Application
-        run: ng build --base-href /HwayangHouse.github.io/
+        run: ng build --base-href /hwayang-house/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -41,4 +41,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/whayang-pension
+          publish_dir: ./dist/hwayang-house
